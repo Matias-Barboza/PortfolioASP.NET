@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PortfolioASP_NET.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Portfolio personal - Matias Barboza</title>
+
+    
+    <link href="~/laptop-code-solid.ico" rel="shortcut icon" type="image/x-icon"/>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <!-- HEADER -->
+        <div class="contenedor-header">
+            <header>
+                <div class="contenedor-logo">
+                    <a href="#">Logo</a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">SOBRE MÍ</a></li>
+                        <li><a href="#">CURRICULUM</a></li>
+                        <li><a href="#">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+            <div class="Redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i>LINKEDIN</a>
+                <a href="#"><i class="fa-brands fa-square-github"></i>GITHUB</a>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
