@@ -6,9 +6,10 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Portfolio personal - Matias Barboza</title>
-
+    <link href="CSS/Styles.css" rel="stylesheet" />
     
     <link href="~/laptop-code-solid.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
     
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -20,9 +21,9 @@
         <div class="contenedor-header">
             <header>
                 <div class="contenedor-logo">
-                    <a href="#">Logo</a>
+                    <a href="#">MB</a>
                 </div>
-                <nav class="nav">
+                <nav>
                     <ul>
                         <li><a href="#">INICIO</a></li>
                         <li><a href="#">SOBRE MÍ</a></li>
@@ -30,6 +31,9 @@
                         <li><a href="#">CONTACTO</a></li>
                     </ul>
                 </nav>
+                <div class="nav-responsive">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </header>
 
         </div>
@@ -41,10 +45,10 @@
 
         <!-- FOOTER -->
         <footer>
-            <a href="#"><i class="fa-solid fa-angles-up"></i></a>
-            <div class="Redes">
-                <a href="#"><i class="fa-brands fa-linkedin"></i>LINKEDIN</a>
-                <a href="#"><i class="fa-brands fa-square-github"></i>GITHUB</a>
+            <a href="#" class="up"><i class="fa-solid fa-angles-up"></i></a>
+            <div class="redes">
+                <a href="http://www.linkedin.com/in/matias-barboza"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Matias-Barboza"><i class="fa-brands fa-square-github"></i></a>
             </div>
         </footer>
     </form>

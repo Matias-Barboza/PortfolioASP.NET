@@ -1,0 +1,178 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+/* TODO */
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* HEADER */
+.contenedor-header{
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .contenedor-logo a{
+    font-family: 'Kalam';
+    font-size: 40px;
+    color: #1286c9;
+    text-decoration: none;
+    border: 2px solid #1286c9;
+    border-radius: 50%;
+    padding: 10px 10px 0 10px;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li{
+    margin: 0 15px;
+    padding: 3px;
+}
+.contenedor-header header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+.contenedor-header header nav ul li a:hover{
+   color: #1286c9; 
+}
+.contenedor-header header nav .nav-responsive{
+    background-color: #1286c9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+    url("/Img/me1.png");
+    background-size: cover;
+    height: 110vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    height: 700px;
+}
+.inicio .contenido-banner .contenedor-img{
+    height: auto;
+}
+.inicio .contenido-banner .contenedor-img img{
+    border: 5px solid #1286c9;
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+.inicio .contenido-banner .contenedor-informacion-banner{
+    height: 40vh;
+}
+.inicio .contenido-banner .contenedor-informacion-banner h1{
+    margin-top: 10px;
+    font-size: 42px;
+    font-family: 'Noto Sans';
+}
+.inicio .contenido-banner .contenedor-informacion-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner contenedor-informacion-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    margin: 40px 5px;
+    line-height: 42px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .contenedor-informacion-banner .redes a:hover{
+    background-color: #1286c9;
+}
+.inicio .contenido-banner .contenedor-informacion-banner .open-to-work p{
+    color: rgb(55, 209, 106);
+    border: 1px solid;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 15px;
+    line-height: 42px;
+    display: inline-block;
+    transition: .3s;
+    cursor: auto;
+}
+.inicio .contenido-banner .contenedor-informacion-banner .open-to-work p:hover{
+    color: #fff;
+    background-color: rgb(55, 209, 106);
+}
+/* FOOTER */
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width:  50px;
+    height: 50px;
+    line-height: 49px;
+    margin:  40px 5px;
+    font-size: 30px;
+    transition: .3s;
+}
+footer .redes a:hover{
+    background-color: #1286c9;
+}
+footer .up{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1286c9;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
