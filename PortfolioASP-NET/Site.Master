@@ -37,7 +37,7 @@
                         <li><a href="Contacto.aspx" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
                 </nav>
-                <div class="nav-responsive" onclick="mostrarOcultar()">
+                <div class="nav-responsivo" onclick="mostrarOcultar()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </header>

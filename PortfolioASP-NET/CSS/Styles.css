@@ -54,7 +54,7 @@ html{
 .contenedor-header header nav ul li a:hover{
    color: #1286c9; 
 }
-.contenedor-header .nav-responsive{
+.nav-responsivo{
     background-color: #1286c9;
     color: #fff;
     padding: 5px 10px;
@@ -445,7 +445,7 @@ footer .up{
     nav{
         display: none;
     }
-    .nav-responsive{
+    .nav-responsivo{
         display: block;
     }
     nav.responsive{
