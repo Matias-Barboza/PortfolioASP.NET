@@ -6,32 +6,38 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Portfolio personal - Matias Barboza</title>
-    <link href="CSS/Styles.css" rel="stylesheet" />
-    
+    <link href="CSS/styles.css" rel="stylesheet" />
+
     <link href="~/laptop-code-solid.ico" rel="shortcut icon" type="image/x-icon"/>
     <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
-    
+        
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        
+
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/JS/script.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
         <!-- HEADER -->
         <div class="contenedor-header">
             <header>
                 <div class="contenedor-logo">
                     <a href="#">MB</a>
                 </div>
-                <nav>
+                <nav id="nav">
                     <ul>
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="#">SOBRE MÍ</a></li>
-                        <li><a href="#">CURRICULUM</a></li>
-                        <li><a href="#">CONTACTO</a></li>
+                        <li><a href="Default.aspx" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="AboutMe.aspx" onclick="seleccionar()">SOBRE MÍ</a></li>
+                        <li><a href="Curriculum.aspx" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="Contacto.aspx" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
                 </nav>
-                <div class="nav-responsive">
+                <div class="nav-responsive" onclick="mostrarOcultar()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </header>
@@ -51,6 +57,7 @@
                 <a href="https://github.com/Matias-Barboza"><i class="fa-brands fa-square-github"></i></a>
             </div>
         </footer>
+
     </form>
 </body>
 </html>
