@@ -15,7 +15,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" action="https://formspree.io/f/xoqgnqpn" method="POST">
 
         <asp:ScriptManager runat="server">
             <Scripts>
